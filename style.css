@@ -1,0 +1,127 @@
+body{
+    overflow-y:overlay;
+    background-image: linear-gradient(to bottom,white, aliceblue,rgb(254, 249, 255));
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}  
+::-webkit-scrollbar-thumb {
+    background: transparent
+}
+::-webkit-scrollbar-track {
+    background: transparent
+}
+.header{
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 1;
+    width:100vw;
+    padding: 1px;
+}
+nav {
+    background-color: rgb(5, 24, 65);
+}
+nav ul{
+    margin: 0;
+    height:max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+nav li:hover{background-color:rgb(89, 82, 102);color: #fff;}
+nav > ul > li > a{
+    color: rgb(233, 217, 217);
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    font-size: large;
+}
+section{
+    height:100vh; align-content: center; text-align: center;
+    vertical-align: middle; align-items: center; padding-top: 200px;
+}
+#home > #welcome{
+    color: indigo; font-size: 50px; text-align: center; font-weight: bolder;padding: 30px;
+}
+#home > #intro{
+    color: dodgerblue; font-size: xx-large; text-align: center; font-weight: 800;padding: 20px;
+}
+#home > #more{ 
+    font-size: x-large; text-align: center;
+}
+#more a{
+    color: orange;text-decoration: none;
+}
+#about > div{
+    border-radius: 1px 500px 1px 500px;
+    background-color: aliceblue; height: max-content;
+    width: 80vw; vertical-align: middle;
+    margin: 0px auto; color: blue; 
+    padding-bottom: 10vh; border-left:1px solid;
+}
+#about > div > p{
+    font-style: italic; font-size: larger; text-shadow: 2px 2px 1px rgb(173, 159, 159);
+}
+#about #starter > p{
+    color: rgb(255, 0, 255); font-size: xx-large; font-weight: bold; padding: 10px;text-align: center; 
+}
+#about #content > p{
+    font-size: large; font-weight: 800; padding: 10px; line-height: 2em; color: darkorchid; margin: 10px 150px; text-align: center; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; justify-content: space-between;
+}
+#contact div{
+    font-size: x-large;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 20vh auto;
+}
+#contact #mail{
+    width: max-content; height: max-content; display: block; text-decoration: none; background-color: rgb(24, 24, 104); color: white; 
+    border-radius: 10px; padding: 15px; margin-bottom:30px;
+}
+#gallery{
+    padding-top: 70px;vertical-align: auto;
+}
+#gallery > p{
+    font-size: x-large;
+    color: blueviolet;
+    text-shadow: 2px 1px rgb(160, 144, 79);
+}
+#gallery > #wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#wrapper >div{
+    border-radius: 5%;
+    border: 5px solid seashell;
+    height: fit-content;
+    width: fit-content;
+}
+img{
+    height:400px;
+    width: 400px;
+}
+.footer{
+    background-color: rgb(5, 24, 65);
+    color: whitesmoke;
+    text-align: center;
+    height: 20px;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
